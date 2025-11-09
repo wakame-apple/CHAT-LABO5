@@ -48,8 +48,13 @@ process.on('SIGTERM', () => {
 });   
 
 // 個別のページルート
-app.get('/test-proxy', (req, res) => {
-  res.sendFile(path.join(publicPath, 'test-proxy.html'));
+app.get('/chat', (req, res) => {
+  res.sendFile(path.join(publicPath, 'chat.html'));
+});
+
+// 個別のページルート
+app.get('/labo5', (req, res) => {
+  res.sendFile(path.join(publicPath, 'labo5.html'));
 });
 
 
