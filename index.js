@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // その他のルートは index.html にフォールバック（SPA風）
 app.get('/', (req, res) => {
-  res.sendFile(path.join(publicPath, 'index.html'));
+  res.sendFile(path.join('index.html'));
 });
 
 // ポート設定
@@ -47,12 +47,12 @@ process.on('SIGTERM', () => {
 
 // 個別のページルート
 app.get('/chat', (req, res) => {
-  res.sendFile(path.join(publicPath, 'chat.html'));
+  res.sendFile(path.join('chat.html'));
 });
 
 // 個別のページルート
 app.get('/labo5', (req, res) => {
-  res.sendFile(path.join(publicPath, 'labo5.html'));
+  res.sendFile(path.join( 'labo5.html'));
 });
 
 
