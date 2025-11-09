@@ -17,9 +17,7 @@ app.use(cors());
 app.use(express.json({ limit: '256kb' }));
 app.use(express.urlencoded({ extended: true }));
 
-// 静的ファイルの提供
-const publicPath = path.join(__dirname, 'public'); // または '../public' → 構造に合わせる
-app.use(express.static(publicPath));
+
 
 
 
